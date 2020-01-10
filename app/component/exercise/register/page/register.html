@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>第二节</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/special.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+
+</head>
+
+<script>
+
+    function submit() {
+        var input_mobile = document.getElementById("input_mobile");
+        var input_password = document.getElementById("input_password");
+        var radio_gender = document.getElementsByName("gender");
+        var select_grade = document.getElementById("grade");
+        var mobile = input_mobile.value;
+        var password = input_password.value;
+        var gender = '';
+        var grade = select_grade.value;
+
+        for (var index = 0; index < radio_gender.length; index++) {
+            if (radio_gender[index].checked === true) {
+                gender = radio_gender[index].value;
+            }
+        }
+
+        console.log(mobile);
+        console.log(password);
+        console.log(gender);
+        console.log(grade);
+
+    }
+
+</script>
+
+<body>
+
+<div class="login-form">
+
+    <div class="line">
+        <p>手机号</p>
+        <input class="input" type="text" placeholder="请输入你的手机号" id="input_mobile"/>
+    </div>
+
+    <div class="line">
+        <p>性别</p>
+        <input class="radio" type="radio" name="gender" value="男">男</input>
+        <input class="radio" type="radio" name="gender" value="女">女</input>
+    </div>
+
+    <div class="line">
+        <p>年&nbsp;&nbsp;级</p>
+        <select id="grade">
+            <option value="1">1年级</option>
+            <option value="2">2年级</option>
+            <option value="3">3年级</option>
+            <option value="4">4年级</option>
+            <option value="5">5年级</option>
+        </select>
+    </div>
+
+    <div class="line">
+        <p>密码</p>
+        <input class="input" type="password" placeholder="请输入密码" id="input_password"/>
+    </div>
+
+    <button onclick="submit()">
+        登录
+    </button>
+
+</div>
+
+<div class="img-block"><img/></div>
+
+</body>
+
+</html>

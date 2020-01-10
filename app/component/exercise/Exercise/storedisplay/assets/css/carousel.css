@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.mr-in {
+    width: 5000px;
+    height: 500px;
+    animation: lun 10s linear infinite;
+}
+
+img {
+    float: left;
+    margin-left: 0;
+    width: 1000px;
+    height: 500px;
+
+}
+
+.mr-out {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid blue;
+    overflow: hidden;
+    margin: auto;
+}
+
+@keyframes lun {
+    0% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: -1000px;
+    }
+    35% {
+        margin-left: -1000px;
+    }
+    40% {
+        margin-left: -2000px;
+    }
+    55% {
+        margin-left: -2000px;
+    }
+    60% {
+        margin-left: -3000px;
+    }
+    75% {
+        margin-left: -3000px;
+    }
+    80% {
+        margin-left: -4000px;
+    }
+    100% {
+        margin-left: -4000px;
+    }
+}

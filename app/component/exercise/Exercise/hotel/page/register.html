@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>注册</title>
+
+    <script language="javascript">
+        function yz() {
+            if (pwd1.value != pwd2.value) {
+                alert("两次密码不一致");
+                return false;
+            } else return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div align="center">
+    <form action="hotel.html">
+        请输入用户名:<input type="text" required><br>
+        请输入密码:<input type="password" id="pwd1" required><br>
+        请确认密码:<input type="password" id="pwd2" required><br>
+        请输入电话号码:<input type="text"><br>
+        <input type="submit" value="注册" onClick="return yz();">
+    </form>
+</div>
+
+</body>
+</html>

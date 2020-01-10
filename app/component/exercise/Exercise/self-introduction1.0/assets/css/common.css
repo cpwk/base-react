@@ -1,0 +1,33 @@
+body {
+    background: #ffca06;
+}
+
+body h1 {
+    text-align: center;
+}
+
+body .message {
+    position: relative;
+}
+
+body .message img {
+    width: 250px;
+}
+
+body .message .message {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+body .lake img {
+    width: 100px;
+    float: right;
+}
+
+body .img {
+    text-align: center;
+}
+
+/*# sourceMappingURL=common.css.map */

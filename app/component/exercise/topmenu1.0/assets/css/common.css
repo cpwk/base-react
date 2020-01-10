@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 13px;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    font-weight: 200;
+    color: #000;
+}
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, input {
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+a:focus, input:focus, img:focus, button:focus, textarea:focus, select:focus, li:focus, label:focus {
+    outline: none;
+}
+
+a, button, input, li, label {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.clearfix-h20 {
+    clear: both;
+    height: 20px;
+}
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+body .p {
+    left: 50%;
+    margin-left: -50px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    opacity: 1;
+}
+
+body table {
+    text-align: center;
+    width: 1000px;
+    border-collapse: collapse;
+    left: 50%;
+    margin-left: -500px;
+    position: relative;
+}
+
+body table tr {
+    height: 100px;
+}
+
+body table td {
+    border: 1px solid #ff0000;
+    text-align: center;
+}
+
+body table th {
+    border: 1px solid #ff0000;
+    background: #eee;
+}
+
+/*# sourceMappingURL=special.css.map */

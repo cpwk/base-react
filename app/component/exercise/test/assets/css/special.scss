@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+
+  .p {
+    left: 50%;
+    margin-left: -50px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    opacity: 1;
+  }
+
+  table {
+    text-align: center;
+    width: 1000px;
+    border-collapse: collapse;
+    left: 50%;
+    margin-left: -500px;
+    position: relative;
+
+    tr {
+      height: 100px;
+
+    }
+
+    td {
+      border: 1px solid #ff0000;
+      text-align: center;
+    }
+
+    th {
+      border: 1px solid #ff0000;
+      background: #eee;
+
+    }
+
+  }
+}

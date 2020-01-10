@@ -1,0 +1,395 @@
+.profile-page {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.profile-page .top-box {
+    width: 100%;
+    background: #fff;
+    height: 174px;
+    position: relative;
+    padding: 15px 0;
+}
+
+.profile-page .top-box .inner {
+    z-index: 1;
+    width: 95vw;
+    height: 144px;
+    margin: 0 2.5vw;
+    background-image: linear-gradient(140deg, #55A5F6 0%, #1C86F3 93%);
+    border-radius: 6px;
+    padding: 17px 13px;
+    position: relative;
+}
+
+.profile-page .top-box .inner .info-block {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.profile-page .top-box .inner .info-block .avatar {
+    flex: 0 0 50px;
+    height: 50px;
+    background: #fff;
+    padding: 1px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.profile-page .top-box .inner .info-block .avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.profile-page .top-box .inner .info-block .avatar .edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../image/common/icon_edit_profile.png");
+    background-size: contain;
+}
+
+.profile-page .top-box .inner .info-block .info {
+    flex: 1;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.profile-page .top-box .inner .info-block .info .name {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.profile-page .top-box .inner .info-block .info .nameplate {
+    width: 100%;
+}
+
+.profile-page .top-box .inner .info-block .info .nameplate .vip {
+    min-width: 40px;
+    height: 16px;
+    line-height: 14px;
+    float: left;
+    background-image: linear-gradient(142deg, #FED68F 0%, #F9A711 88%);
+    border: 1px solid #FFFDFD;
+    border-radius: 8px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+.profile-page .top-box .inner .info-block .info .nameplate .vip i {
+    float: left;
+    display: block;
+    margin: 2px 5px 0 0;
+    width: 10px;
+    height: 10px;
+    background: url("../image/common/icon_star.png");
+    background-size: contain;
+}
+
+.profile-page .top-box .inner .info-block .info .nameplate .vip p {
+    float: left;
+    font-size: 11px;
+}
+
+.profile-page .top-box .inner .stat-block {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-page .top-box .inner .stat-block li {
+    float: left;
+    width: 33.3%;
+    color: #fff;
+    position: relative;
+}
+
+.profile-page .top-box .inner .stat-block li p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.profile-page .top-box .inner .stat-block li span {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.profile-page .top-box .inner .stat-block li:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 4px;
+    height: 40px;
+    border-left: 1px solid #fff;
+    transform: scale(0.5);
+}
+
+.profile-page .top-box .inner .stat-block li:last-child:after {
+    display: none;
+}
+
+.profile-page .top-box .inner .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95vw;
+    height: 16.8vw;
+    background: url("../image/common/bg_top_box.png");
+    background-size: contain;
+}
+
+.profile-page .top-box:after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    width: 88vw;
+    height: 77px;
+    left: 6vw;
+    bottom: 10px;
+    opacity: 0.28;
+    background-image: linear-gradient(90deg, #2F9BE9 0%, #5A56E7 100%);
+    border-radius: 6px;
+}
+
+.profile-page .quick-link {
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.profile-page .quick-link li {
+    float: left;
+    width: 33.3%;
+    height: 70px;
+}
+
+.profile-page .quick-link li .icon {
+    position: relative;
+    left: 50%;
+    margin-left: -11.5px;
+    width: 23px;
+    height: 23px;
+    margin-top: 5px;
+}
+
+.profile-page .quick-link li .icon .badge {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    min-width: 16px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.profile-page .quick-link li .order {
+    background: url("../image/common/icon_quick-link_order.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li .course {
+    background: url("../image/common/icon_quick-link_course.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li .message {
+    background: url("../image/common/icon_quick-link_message.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li .give {
+    background: url("../image/common/icon_quick-link_give.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li .place {
+    background: url("../image/common/icon_quick-link_place.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li .footprint {
+    background: url("../image/common/icon_quick-link_footprint.png") no-repeat center;
+    background-size: contain;
+}
+
+.profile-page .quick-link li p {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.profile-page .portal {
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.profile-page .portal li {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+}
+
+.profile-page .portal li .icon {
+    flex: 0 0 40px;
+    height: 48px;
+}
+
+.profile-page .portal li .vip {
+    background: url("../image/common/icon_portal_vip.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .earnings {
+    background: url("../image/common/icon_portal_earnings.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .activity {
+    background: url("../image/common/icon_portal_activity.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .answers {
+    background: url("../image/common/icon_portal_answers.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .collect {
+    background: url("../image/common/icon_portal_collect.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .download {
+    background: url("../image/common/icon_portal_download.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li .set {
+    background: url("../image/common/icon_portal_set.png") center no-repeat;
+    background-size: 50%;
+}
+
+.profile-page .portal li p {
+    flex: 1;
+    line-height: 48px;
+}
+
+.profile-page .portal li p label {
+    width: 100px;
+    float: right;
+    text-align: right;
+    color: #999;
+}
+
+.profile-page .portal li .arrow {
+    flex: 0 0 18px;
+    background: url("../image/common/icon_arrow.png") center no-repeat;
+    background-size: 33%;
+}
+
+.profile-page .portal li:after {
+    position: absolute;
+    content: '';
+    width: 200%;
+    border-bottom: 1px solid #eee;
+    transform: scale(0.5);
+    top: 48px;
+    left: -50%;
+    margin-left: 40px;
+}
+
+.profile-page .portal li:last-child:after {
+    display: none;
+}
+
+.profile-page .menu-bottom {
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    flex-flow: row;
+}
+
+.profile-page .menu-bottom li {
+    flex: 1;
+}
+
+.profile-page .menu-bottom li .icon {
+    position: relative;
+    left: 50%;
+    margin-left: -11.5px;
+    width: 23px;
+    height: 23px;
+    margin-top: 5px;
+}
+
+.profile-page .menu-bottom li .icon .badge {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    min-width: 16px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.profile-page .menu-bottom li .home {
+    background: url("../image/common/icon_btm_home.png");
+    background-size: contain;
+}
+
+.profile-page .menu-bottom li .course {
+    background: url("../image/common/icon_btm_course.png");
+    background-size: contain;
+}
+
+.profile-page .menu-bottom li .msg {
+    background: url("../image/common/icon_btm_msg.png");
+    background-size: contain;
+}
+
+.profile-page .menu-bottom li p {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.profile-page .menu-bottom .active p {
+    color: #2F9BE9;
+}
+
+.profile-page .menu-bottom .active .profile {
+    background: url("../image/common/icon_btm_profile_active.png");
+    background-size: contain;
+}
+
+/*# sourceMappingURL=special.css.map */

@@ -1,0 +1,121 @@
+.main-page {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #3c8dbc;
+    height: 50px;
+}
+
+.main-page .header .logo {
+    flex: 0 0 200px;
+    background: #367fa9;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.main-page .header .info-block {
+    flex: 1;
+}
+
+.main-page .header .info-block .config, .main-page .header .info-block .avatar, .main-page .header .info-block .msg {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.main-page .header .info-block .config:hover, .main-page .header .info-block .avatar:hover, .main-page .header .info-block .msg:hover {
+    background: #367fa9;
+}
+
+.main-page .header .info-block .config {
+    padding: 16px 15.5px;
+}
+
+.main-page .header .info-block .config .icon {
+    width: 19px;
+    height: 17.5px;
+    background: url("../image/common/icon_config.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .header .info-block .avatar {
+    float: right;
+    width: 160px;
+}
+
+.main-page .header .info-block .avatar img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 12.5px;
+}
+
+.main-page .header .info-block .avatar .nick {
+    width: 110px;
+    height: 50px;
+    float: left;
+    color: #fff;
+    text-align: left;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.main-page .header .info-block .msg .icon {
+    margin: 14.5px 16.5px;
+    width: 17px;
+    height: 21px;
+    background: url("../image/common/icon_msg.png") center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.main-page .header .info-block .msg .icon .num {
+    position: absolute;
+    right: -16px;
+    top: -4px;
+    background: #f39c12;
+    min-width: 20px;
+    max-width: 32px;
+    height: 13px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0 4px;
+}
+
+.main-page .header .info-block .msg-email .icon {
+    margin: 16px 14px;
+    width: 22px;
+    height: 17.5px;
+    background: url("../image/common/icon_email.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .header .info-block .msg-email .icon .num {
+    background: #00a65a;
+}
+
+.main-page .header .info-block .msg-flag .icon {
+    margin: 15.5px 15.5px;
+    width: 19px;
+    height: 19px;
+    background: url("../image/common/icon_flag.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .header .info-block .msg-flag .icon .num {
+    background: #dd4b39;
+}
+
+/*# sourceMappingURL=special.css.map */

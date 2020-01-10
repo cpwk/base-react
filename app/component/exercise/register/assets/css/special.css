@@ -1,0 +1,88 @@
+@charset "UTF-8";
+body {
+    background: url("../img/bg.jpg");
+    background-size: contain;
+}
+
+body .login-form {
+    margin-top: 200px;
+    background: #fff;
+    border-radius: 6px;
+    position: relative;
+    width: 500px;
+    height: 340px;
+    left: 50%;
+    margin-left: -200px;
+    box-shadow: 0 0 15px #888888;
+    padding: 40px;
+}
+
+body .login-form .line {
+    width: 100%;
+    min-height: 50px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    line-height: 40px;
+}
+
+body .login-form .line p {
+    margin: 0;
+    flex: 0 0 80px;
+    text-align: right;
+}
+
+body .login-form .line p:after {
+    content: "：";
+}
+
+body .login-form .line .input, body .login-form .line select {
+    flex: 1;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 3px 7px;
+}
+
+body .login-form .line .radio {
+    height: 40px;
+    margin-right: 10px;
+}
+
+body .login-form button {
+    outline: none;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background: #428bca;
+    border: 1px solid #357ebd;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body .img-block {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+body .img-block img {
+    background: url("../img/qrcode.png") center no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+/*# sourceMappingURL=special.css.map */

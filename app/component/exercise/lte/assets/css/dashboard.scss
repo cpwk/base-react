@@ -1,0 +1,143 @@
+
+.main-page {
+
+  width: 100%;
+  height: 100%;
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background: #3c8dbc;
+    height: 50px;
+
+    .logo {
+      flex: 0 0 200px;
+      background: #367fa9;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    .info-block {
+      flex: 1;
+
+
+      .config, .avatar, .msg {
+        float: right;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+          background: #367fa9;
+        }
+      }
+
+
+      .config {
+        padding: 16px 15.5px;
+
+        .icon {
+
+          width: 19px;
+          height: 17.5px;
+          background: url("../image/common/icon_config.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+
+      .avatar {
+        float: right;
+        width: 160px;
+
+        img {
+          float: left;
+          width: 25px;
+          height: 25px;
+          border-radius: 100%;
+          margin: 12.5px;
+        }
+
+        .nick {
+          width: 110px;
+          height: 50px;
+          float: left;
+          color: #fff;
+          text-align: left;
+          line-height: 50px;
+          overflow: hidden;
+        }
+
+
+      }
+
+
+      .msg {
+
+        .icon {
+          margin: 14.5px 16.5px;
+          width: 17px;
+          height: 21px;
+          background: url("../../assets/image/common/icon_msg.png") center no-repeat;
+          background-size: contain;
+          position: relative;
+
+          .num {
+            position: absolute;
+            right: -16px;
+            top: -4px;
+            background: #f39c12;
+            min-width: 20px;
+            max-width: 32px;
+            height: 13px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            text-align: center;
+            border-radius: 6px;
+            padding: 0 4px;
+          }
+        }
+
+      }
+
+
+      .msg-email {
+
+        .icon {
+          margin: 16px 14px;
+          width: 22px;
+          height: 17.5px;
+          background: url("../../assets/image/common/icon_email.png") center no-repeat;
+          background-size: contain;
+
+          .num {
+            background: #00a65a;
+          }
+        }
+
+      }
+
+      .msg-flag {
+
+        .icon {
+          margin: 15.5px 15.5px;
+          width: 19px;
+          height: 19px;
+          background: url("../../assets/image/common/icon_flag.png") center no-repeat;
+          background-size: contain;
+
+          .num {
+            background: #dd4b39;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
+}

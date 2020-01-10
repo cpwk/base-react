@@ -1,0 +1,257 @@
+.main-page {
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+.main-page .top-box {
+    position: relative;
+    width: 94vw;
+    height: 150px;
+    background-image: linear-gradient(140deg, #55A5F6 0%, #1C86F3 93%);
+    border-radius: 6px;
+    margin: 15px 3vw 20px 3vw;
+    box-shadow: 0 4px 10px rgba(28, 134, 243, 0.5);
+}
+
+.main-page .top-box .profile-info {
+    width: 100%;
+    height: 85px;
+    padding: 17px 14px;
+    display: flex;
+    flex-flow: row;
+}
+
+.main-page .top-box .profile-info .avatar {
+    flex: 0 0 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.main-page .top-box .profile-info .avatar img {
+    margin: 1px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.main-page .top-box .profile-info .avatar .edit {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    width: 16px;
+    height: 16px;
+    background: url("../image/icon_edit_profile.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .top-box .profile-info .info {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.main-page .top-box .profile-info .info .nick {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.main-page .top-box .profile-info .info .nameplates .item {
+    padding: 0 5px;
+    float: left;
+    min-width: 30px;
+    max-width: 100px;
+    background-image: linear-gradient(142deg, #FED68F 0%, #F9A711 88%);
+    border-radius: 100px;
+    color: #fff;
+    margin-right: 7px;
+    border: 1px solid #fff;
+}
+
+.main-page .top-box .profile-info .info .nameplates .item .icon {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: url("../image/icon_star.png") center no-repeat;
+    background-size: contain;
+    margin: 4px 4px 0 0;
+}
+
+.main-page .top-box .stat {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.main-page .top-box .stat li {
+    float: left;
+    width: 33%;
+    color: #fff;
+    position: relative;
+}
+
+.main-page .top-box .stat li .num {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.main-page .top-box .stat li .descr {
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.main-page .top-box .stat li:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 40px;
+    top: 5px;
+    right: 0;
+    border-left: 1px solid #fff;
+    transform: scale(0.5);
+}
+
+.main-page .top-box .stat li:last-child:after {
+    display: none;
+}
+
+.main-page .top-box .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 94vw;
+    height: 17vw;
+    background: url("../image/bg_top_box.png") bottom no-repeat;
+    background-size: contain;
+}
+
+.main-page .portal {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.main-page .portal li {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-flow: row;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-page .portal li .icon {
+    flex: 0 0 18px;
+    height: 18px;
+}
+
+.main-page .portal li .info {
+    flex: 1;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.main-page .portal li .arrow {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 13px;
+    margin: 1px 0;
+    background: url("../image/icon_arrow.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .portal li:after {
+    position: absolute;
+    content: "";
+    width: 200%;
+    height: 1px;
+    border-bottom: 1px solid #dfdfdf;
+    left: -50%;
+    margin-left: 43px;
+    bottom: 0;
+    transform: scale(0.5);
+}
+
+.main-page .portal li:last-child:after {
+    display: none;
+}
+
+.main-page .portal li:nth-child(1) .icon {
+    background: url("../image/icon_portal_vip.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .portal li:nth-child(2) .icon {
+    background: url("../image/icon_portal_vip.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .portal li:nth-child(3) .icon {
+    background: url("../image/icon_portal_vip.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .menu-btm {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    display: flex;
+    flex-flow: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+
+.main-page .menu-btm li {
+    flex: 1;
+    padding: 4px 0 2px 0;
+}
+
+.main-page .menu-btm li .icon {
+    position: relative;
+    left: 50%;
+    margin-left: -11.5px;
+    width: 23px;
+    height: 23px;
+}
+
+.main-page .menu-btm li p {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 11px;
+}
+
+.main-page .menu-btm li:nth-child(1) .icon {
+    background: url("../image/icon_btm_home.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .menu-btm li:nth-child(2) .icon {
+    background: url("../image/icon_btm_course.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .menu-btm li:nth-child(3) .icon {
+    background: url("../image/icon_btm_msg.png") center no-repeat;
+    background-size: contain;
+}
+
+.main-page .menu-btm li:nth-child(4) .icon {
+    background: url("../image/icon_btm_profile_active.png") center no-repeat;
+    background-size: contain;
+}
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+img {
+  border: 0 none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+span {
+  word-break: break-all;
+}
+
+input, textarea {
+  resize: none;
+  border: none;
+}
+
+a:focus, input:focus, img:focus, button:focus, textarea:focus, select:focus, li:focus {
+  outline: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix-h20 {
+  clear: both;
+  height: 20px;
+}

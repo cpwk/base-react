@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>第二节</title>
+</head>
+<script>
+
+    function submit() {
+        var input_mobile = document.getElementById("input_mobile");
+        var input_password = document.getElementById("input_password");
+        var radio_gender = document.getElementsByName("gender");
+        var select_grade = document.getElementById("grade");
+        var mobile = input_mobile.value;
+        var password = input_password.value;
+        var gender = '';
+        var grade = select_grade.value;
+        for (var index = 0; index < radio_gender.length; index++) {
+            if (radio_gender[index].checked === true) {
+                gender = radio_gender[index].value;
+            }
+        }
+
+        console.log(mobile);
+        console.log(password);
+        console.log(gender);
+        console.log(grade);
+
+    }
+
+
+</script>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input, button {
+        outline: none;
+    }
+
+    input, p {
+        margin: 0;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: url("assets/image/bg.jpg");
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .login-form {
+        background: #fff;
+        border-radius: 6px;
+        position: relative;
+        width: 500px;
+        height: 340px;
+        left: 50%;
+        margin-left: -200px;
+        box-shadow: 0 0 15px #888888;
+        padding: 40px;
+    }
+
+    .login-form .line {
+        width: 100%;
+        min-height: 50px;
+        padding: 5px;
+        display: flex;
+        flex-flow: row;
+        line-height: 40px;
+    }
+
+    .login-form .line p {
+        flex: 0 0 80px;
+        text-align: right;
+    }
+
+    .login-form .line p:after {
+        content: "：";
+    }
+
+    .login-form .line .input, select {
+        flex: 1;
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        padding: 3px 7px;
+    }
+
+    .login-form .line .radio {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .login-form button {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        background: #428bca;
+        border: 1px solid #357ebd;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .qrcode {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        width: 110px;
+        height: 110px;
+        padding: 5px;
+        background: #fff;
+        border-radius: 6px;
+    }
+
+    .qrcode img {
+        width: 100px;
+        height: 100px;
+    }
+
+</style>
+
+<body>
+
+
+<div class="login-form">
+    <div class="line">
+        <p>手机号</p><input class="input" type="text" placeholder="请输入你的手机号" id="input_mobile"/>
+    </div>
+    <div class="line">
+        <p>性别</p>
+        <input class="radio" type="radio" name="gender" value="男">男</input>
+        <input class="radio" type="radio" name="gender" value="女">女</input>
+    </div>
+
+    <div class="line">
+        <p>年&nbsp;&nbsp;级</p>
+        <select id="grade">
+            <option value="1">1年级</option>
+            <option value="2">2年级</option>
+            <option value="3">3年级</option>
+            <option value="4">4年级</option>
+            <option value="5">5年级</option>
+        </select>
+    </div>
+
+
+    <div class="line">
+        <p>密码</p><input class="input" type="password" placeholder="请输入你的手机号" id="input_password"/>
+    </div>
+
+    <button onclick="submit()">登录</button>
+
+</div>
+
+<div class="qrcode">
+    <img src="assets/image/qrcode.png"/>
+</div>
+
+
+</body>
+</html>

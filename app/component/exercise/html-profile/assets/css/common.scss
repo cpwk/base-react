@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  width: 100%;
+  min-width: 300px;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 13px !important;
+  color: #333;
+  background: #FAFAFA;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+img {
+  border: 0 none;
+}
+
+b {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+strong {
+  font-size: inherit;
+}
+
+em, i {
+  font-style: normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a, button, input, li {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  resize: none;
+  border: none;
+  border-radius: 0;
+}
+
+a:focus, input:focus, img:focus, button:focus, textarea:focus, select:focus, li:focus {
+  outline: none;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+//
+//#app {
+//  position: relative;
+//  -webkit-overflow-scrolling: touch;
+//  -webkit-transition: padding-top 0.8s;
+//}
+
+.clear {
+  visibility: hidden;
+  clear: both;
+  width: 1px;
+  height: 0;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix-h20 {
+  clear: both;
+  height: 20px;
+}
+
+//长按不出现放大镜效果
+button, input[type='button'] {
+  border: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+

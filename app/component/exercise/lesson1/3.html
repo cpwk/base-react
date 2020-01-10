@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>第三节 Ajax 登录</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<script>
+
+    function submit() {
+
+        var username = $("#username").val();
+        var password = $("#input_password").val();
+        var gender = $("input[name='gender']:checked").val();
+
+        console.log(username);
+        console.log(password);
+        console.log(gender);
+
+        $.ajax({
+            //请求方式
+            type: "POST",
+            //请求的媒体类型
+            // contentType: "application/json;charset=UTF-8",
+            'Content-Type': 'application/x-www-form-urlencoded',
+            //请求地址
+            url: "http://localhost:9059/adm/admin/signin",
+            //数据，json字符串
+            data: {admin: JSON.stringify({username, password})},
+            //请求成功
+            success: function (result) {
+                console.log(result);
+            },
+            //请求失败，包含具体的错误信息
+            error: function (e) {
+                console.log(e.status);
+                console.log(e.responseText);
+            }
+        });
+
+    }
+
+
+</script>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    input, button {
+        outline: none;
+    }
+
+    input, p {
+        margin: 0;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: url("assets/image/bg.jpg");
+        background-size: cover;
+        padding-top: 200px;
+    }
+
+    .login-form {
+        background: #fff;
+        border-radius: 6px;
+        position: relative;
+        width: 500px;
+        height: 340px;
+        left: 50%;
+        margin-left: -200px;
+        box-shadow: 0 0 15px #888888;
+        padding: 40px;
+    }
+
+    .login-form .line {
+        width: 100%;
+        min-height: 50px;
+        padding: 5px;
+        display: flex;
+        flex-flow: row;
+        line-height: 40px;
+    }
+
+    .login-form .line p {
+        flex: 0 0 80px;
+        text-align: right;
+    }
+
+    .login-form .line p:after {
+        content: "：";
+    }
+
+    .login-form .line .input, select {
+        flex: 1;
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        padding: 3px 7px;
+    }
+
+    .login-form .line .radio {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .login-form button {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        background: #428bca;
+        border: 1px solid #357ebd;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .qrcode {
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        width: 110px;
+        height: 110px;
+        padding: 5px;
+        background: #fff;
+        border-radius: 6px;
+    }
+
+    .qrcode img {
+        width: 100px;
+        height: 100px;
+    }
+
+</style>
+
+<body>
+
+
+<div class="login-form">
+    <div class="line">
+        <p>账号</p><input class="input" type="text" placeholder="请输入你的手机号" id="username"/>
+    </div>
+    <div class="line">
+        <p>性别</p>
+        <input class="radio" type="radio" name="gender" value="男">男</input>
+        <input class="radio" type="radio" name="gender" value="女">女</input>
+    </div>
+
+    <div class="line">
+        <p>密码</p><input class="input" type="password" placeholder="请输入你的手机号" id="input_password"/>
+    </div>
+
+    <button onclick="submit()">登录</button>
+
+</div>
+
+<div class="qrcode">
+    <img src="assets/image/qrcode.png"/>
+</div>
+
+
+</body>
+</html>
